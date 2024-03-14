@@ -1,3 +1,199 @@
+/* CSS Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
 body {
-    background-color: lightblue;
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Root Variables */
+
+:root {
+    --dark-blue100: #609ED4;
+    --dark-blue200: #356EA9;
+    --dark-blue300: #0A3871;
+    --dark-blue400: #072B61;
+    --dark-blue500: #052051;
+    --gray100: #CED4DA;
+    --gray200: #ADB5BD;
+    --gray300: #868E96;
+    --gray400: #495057;
+    --gray500: #343A40;
+    --ligth-blue100: #F3F5FC;
+    --ligth-blue200: #EFF1FA;
+    --ligth-blue300: #E9ECF8;
+    --ligth-blue400: #AAB2D5;
+    --ligth-blue500: #757FB2;
+}
+
+.sora-100 {
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.sora-600 {
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Main */
+
+body {
+    background-color: var(--ligth-blue100);
+    font-family: "Sora", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    height: 98vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 50%;
+    border: solid 1px var(--dark-blue500);
+}
+
+.card-title {
+    font-size: 32px;
+}
+
+.input-group__one {
+    border: 0;
+    width: 50%;
+    height: 70%;
+}
+
+input[type="text"] {
+    height: 100px;
 }

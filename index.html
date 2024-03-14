@@ -4,12 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Encriptador Texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <title>Encriptador de Texto</title>
 </head>
 
 <body>
-    <h1>Encriptador de texto</h1>
+
+    <article class="card">
+        <h1 class="card-title sora-600">Encriptador de texto</h1>
+        <div>
+            <input id="input-group__one" type="text" placeholder="Ingrese el texto aquí ..." onkeyup="mayus(this)"
+                autofocus>
+            <input id="input-group__two" type="text" placeholder="Ningún mensaje fue encontrado ...">
+        </div>
+        <div class="buttons-group">
+            <button class="buttons-group__encriptar" onclick="encriptarTexto()">Encriptar</button>
+            <button class="buttons-group__desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+        </div>
+    </article>
+
     <script src="app.js"></script>
 </body>
 
