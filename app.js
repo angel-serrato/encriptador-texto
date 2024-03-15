@@ -21,6 +21,18 @@ function encriptarTexto() {
         outputText = outputText + charCode;
     }
     document.getElementById("input-group__two").value = outputText;
+    document.getElementById("buttons-group__copiar").style.display = "block";
+}
+
+async function copiarContenido() {
+    let otro = document.getElementById("input-group__two").value;
+    try {
+        await navigator.clipboard.writeText(otro);
+        console.log('Contenido copiado en el portapapeles');
+        console.log(otro);
+    } catch (error) {
+        console.error('Error al copiar el contenido', error);
+    }
 }
 
 function desencriptarTexto() {

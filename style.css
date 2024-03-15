@@ -197,3 +197,7 @@ body {
 input[type="text"] {
     height: 100px;
 }
+
+#buttons-group__copiar {
+    display: none;
+}
