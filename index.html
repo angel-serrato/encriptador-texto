@@ -8,26 +8,43 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <title>Encriptador de Texto</title>
 </head>
 
 <body>
 
     <header>
-        <img src="" alt="">
+        <h1 class="inter-400">Encriptador de texto</h1>
     </header>
     <main>
         <section>
-            <input class="input-text" type="text" placeholder="Ingrese el texto aquí" autofocus>
+            <input id="input-group__one" type="text" placeholder="Ingrese el texto aquí ..." onkeyup="mayus(this)"
+                autofocus class="inter-400">
+            <p class="inter-400">Sólo letras minúsculas y sin acentos.</p>
+            <div class="buttons-group">
+                <button class="buttons-group__encriptar inter-400" onclick="encriptarTexto()">Encriptar</button>
+                <button class="buttons-group__desencriptar inter-400"
+                    onclick="desencriptarTexto()">Desencriptar</button>
+            </div>
         </section>
         <section>
-
+            <img src="./images/icons8-data-transfer-50.png" alt="Data transfer">
+        </section>
+        <section>
+            <input id="input-group__two" type="text" placeholder="Ningún mensaje fue encontrado ..." class="inter-400">
+            <div class="buttons-group">
+                <button class="inter-400" id="buttons-group__copiar" onclick="copiarContenido()">Copiar</button>
+            </div>
         </section>
     </main>
+    <footer>
+        <p>Desarrollado por Angel Serrato</p>
+    </footer>
 
 
-    <article class="card">
+    <!--
+        <article class="card">
         <h1 class="card-title sora-600">Encriptador de texto</h1>
         <div>
             <input id="input-group__one" type="text" placeholder="Ingrese el texto aquí ..." onkeyup="mayus(this)"
@@ -43,6 +60,7 @@
             <button id="buttons-group__copiar" onclick="copiarContenido()">Copiar</button>
         </div>
     </article>
+    -->
 
     <script src="app.js"></script>
 </body>

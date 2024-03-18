@@ -150,52 +150,55 @@ table {
     --ligth-blue500: #757FB2;
 }
 
-.sora-100 {
-    font-family: "Sora", sans-serif;
+.inter-400 {
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-}
-
-.sora-600 {
-    font-family: "Sora", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+    font-variation-settings: "slnt" 0;
 }
 
 /* Main */
 
 body {
     background-color: var(--ligth-blue100);
-    font-family: "Sora", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 98vw;
     height: 98vh;
 }
 
-.card {
+h1 {
+    font-size: 47.78px;
+    font-weight: 600;
+    position: sticky;
+    margin: 28px;
+    margin-left: 35px;
+}
+
+main {
     display: flex;
-    flex-direction: column;
-    width: 90%;
-    height: 50%;
-    border: solid 1px var(--dark-blue500);
-}
-
-.card-title {
-    font-size: 32px;
-}
-
-.input-group__one {
-    border: 0;
-    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
     height: 70%;
+    margin: auto;
+}
+
+section {
+    width: 25%;
+}
+
+section>input {
+    width: 100%;
+}
+
+header {
+    display: block;
 }
 
 input[type="text"] {
-    height: 100px;
+    height: 40%;
+}
+
+.buttons-group {
+    cursor: pointer;
 }
 
 #buttons-group__copiar {
