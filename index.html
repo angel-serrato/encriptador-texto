@@ -17,50 +17,29 @@
     <header>
         <h1 class="inter-400">Encriptador de texto</h1>
     </header>
-    <main>
-        <section>
+    <main class="main-flex">
+        <section class="input-section">
             <input id="input-group__one" type="text" placeholder="Ingrese el texto aquí ..." onkeyup="mayus(this)"
                 autofocus class="inter-400">
-            <p class="inter-400">Sólo letras minúsculas y sin acentos.</p>
+            <p class="inter-400">Sólo letras minúsculas y sin acentos</p>
             <div class="buttons-group">
                 <button class="buttons-group__encriptar inter-400" onclick="encriptarTexto()">Encriptar</button>
                 <button class="buttons-group__desencriptar inter-400"
                     onclick="desencriptarTexto()">Desencriptar</button>
             </div>
         </section>
-        <section>
-            <img src="./images/icons8-data-transfer-50.png" alt="Data transfer">
-        </section>
-        <section>
+        <section class="input-section">
             <input id="input-group__two" type="text" placeholder="Ningún mensaje fue encontrado ..." class="inter-400">
+            <span class="inter-400"></span>
             <div class="buttons-group">
                 <button class="inter-400" id="buttons-group__copiar" onclick="copiarContenido()">Copiar</button>
+                <button class="reset" id="buttons-group__copiar2" onclick="limpiarContenido()">Limpiar</button>
             </div>
         </section>
     </main>
     <footer>
-        <p>Desarrollado por Angel Serrato</p>
+        <p class="inter-400">Desarrollado por Angel Serrato</p>
     </footer>
-
-
-    <!--
-        <article class="card">
-        <h1 class="card-title sora-600">Encriptador de texto</h1>
-        <div>
-            <input id="input-group__one" type="text" placeholder="Ingrese el texto aquí ..." onkeyup="mayus(this)"
-                autofocus>
-            <input id="input-group__two" type="text" placeholder="Ningún mensaje fue encontrado ...">
-        </div>
-        <div class="buttons-group">
-            <button class="buttons-group__encriptar" onclick="encriptarTexto()">Encriptar</button>
-            <button class="buttons-group__desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
-        </div>
-
-        <div class="buttons">
-            <button id="buttons-group__copiar" onclick="copiarContenido()">Copiar</button>
-        </div>
-    </article>
-    -->
 
     <script src="app.js"></script>
 </body>

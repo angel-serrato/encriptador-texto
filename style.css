@@ -160,47 +160,81 @@ table {
 
 body {
     background-color: var(--ligth-blue100);
-    width: 98vw;
-    height: 98vh;
-}
-
-h1 {
-    font-size: 47.78px;
-    font-weight: 600;
-    position: sticky;
-    margin: 28px;
-    margin-left: 35px;
-}
-
-main {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    height: 70%;
-    margin: auto;
-}
-
-section {
-    width: 25%;
-}
-
-section>input {
-    width: 100%;
 }
 
 header {
-    display: block;
+    height: 84px;
+    color: var(--dark-blue500);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 47.78px;
+    font-weight: 600;
 }
 
-input[type="text"] {
-    height: 40%;
+
+.main-flex {
+    display: flex;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.input-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .buttons-group {
-    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+
+}
+
+.input-section {
+    height: 400px;
+}
+
+
+input[type="text"] {
+    height: 70%;
+    width: 70%;
 }
 
 #buttons-group__copiar {
     display: none;
+}
+
+footer {
+    height: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: var(--dark-blue400);
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-flex {
+        flex-direction: column;
+    }
+
+    .input-section {
+        width: 100%;
+    }
+
+    header {
+        font-size: 39px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
 }
